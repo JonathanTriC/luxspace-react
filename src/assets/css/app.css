@@ -20,12 +20,12 @@
 		@apply opacity-100;
 	}
 
-	/* .overlay .video {
+	.overlay .video {
 		@apply absolute transform bg-blue-200 bg-no-repeat bg-center rounded-full flex items-center justify-center;
-		background-image: url("../images/design/icon-play.svg");
+		background-image: url("../images/icon-play.svg");
 		top: 50%;
 		left: 50%;
-	} */
+	}
 
 	.hero .hero-image,
 	.hero .hero-caption {
@@ -74,7 +74,7 @@
 	}
 
 	.slider .thumbnail .item {
-		@apply bg-gray-100 relative rounded-lg mb-4 cursor-pointer;
+		@apply rounded relative rounded-lg mb-4 cursor-pointer;
 		width: 106px;
 		height: 106px;
 	}
@@ -140,4 +140,8 @@ a.cart.cart-filled svg g circle.dot {
 
 button[disabled] {
 	@apply bg-gray-300 hover:bg-gray-300 text-gray-400 hover:text-gray-400 cursor-not-allowed;
+}
+
+section:not(.bg-gray-100) + section.sitemap > div {
+	@apply border-t;
 }
